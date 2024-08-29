@@ -1,0 +1,1147 @@
+/*!
+Theme Name: Growth Business
+Theme URI: https://rarathemes.com/wordpress-themes/growth-business/
+Author: Rara Theme
+Author URI: https://rarathemes.com/
+Description: Growth Business is a free WordPress theme for businesses and corporate websites. It is also ideal for websites such as digital agency, coaching, accountant, advisor, creatives, portfolio, restaurants, cafes, health, beauty, marketing, education, hotel, construction, events, fitness, fashion, lawyer, consulting, spa, charity, etc. It is responsive, Schema.org compatible, SEO friendly, RTL compatible, speed optimized, and translation ready. Check the demo at https://rarathemes.com/previews/?theme=growth-business, read the documentation at https://docs.rarathemes.com/docs/rara-business/, and get support at https://rarathemes.com/support-ticket/.
+Template: rara-business
+Version: 1.0.0
+Requires PHP: 5.6
+Tested up to: 6.1
+License: GNU General Public License v3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: growth-business
+Tags: two-columns, left-sidebar, right-sidebar, custom-header, custom-background, custom-logo, custom-menu, theme-options, featured-images, threaded-comments, full-width-template, footer-widgets, translation-ready, blog, e-commerce, portfolio
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Growth Business is based on Underscores https://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+
+
+:root{
+    --primary-color: #3452FF;
+    --primary-color-rgb: 52, 82, 255;
+    --secondary-color: #1C2539;
+    --secondary-color-rgb: 28, 37, 57;
+    --font-color: #5D666F;
+    --font-color-rgb: 93, 102, 111;
+    --primary-font: 'DM Sans', sans-serif;
+    --secondary-font: 'Red Hat Display', sans-serif;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background: var(--primary-color);
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  background: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {
+    color: var(--primary-color);
+  }
+  
+  a:hover,
+  a:focus {
+    color: var(--primary-color);
+  }
+
+  .blossomthemes-email-newsletter-wrapper form input[type="submit"] {
+    background: var(--primary-color);
+  }
+
+/*============================
+NAV FULLWIDTH LAYOUT
+============================*/
+
+body{
+    font-family: var(--primary-font);
+    color: var(--font-color);
+}
+body:not(.hasbanner) .site-header.nav-fullwidth-layout .main-header {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.nav-fullwidth-layout .right {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-fullwidth-layout .right .site-branding .site-title {
+    margin-bottom: 0;
+}
+
+.nav-fullwidth-layout .right .site-branding .site-description {
+    margin-top: 0;
+}
+@media(min-width:600px){
+  .nav-fullwidth-layout + .banner .banner-text {
+    transform: translate(0%, -8%);
+  }
+}
+
+
+body:not(.hasbanner) .nav-fullwidth-layout .main-navigation ul li a::after {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+    .main-navigation ul .current-menu-item>a,
+    .main-navigation ul .current-menu-ancestor>a,
+    .main-navigation ul .current_page_item>a,
+    .main-navigation ul .current_page_ancestor>a {
+        color: var(--primary-color);
+    }
+
+    .main-navigation ul .menu-item-has-children:before {
+        position: absolute;
+        top: 7px;
+        right: 9px;
+        content: "";
+        background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%231C2539 " d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path></svg>');
+        background-repeat: no-repeat;
+        width: 10px;
+        height: 12px;
+        font-weight: 400;
+    }
+
+
+    .nav-fullwidth-layout .main-navigation {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .nav-fullwidth-layout .main-navigation ul li {
+        display: inline-block;
+        margin-right: 35px;
+    }
+
+    .nav-fullwidth-layout .main-navigation ul li:last-child {
+        margin-right: 0;
+    }
+
+    .nav-fullwidth-layout .main-navigation ul ul li {
+        display: block;
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .nav-fullwidth-layout .main-navigation ul li a::after {
+        content: "";
+        background: rgba(255, 255, 255, 0.2);
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -35px;
+    }
+
+    body:not(.hasbanner) .nav-fullwidth-layout .main-navigation ul li a::after {
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-fullwidth-layout .main-navigation ul .menu-item-has-children a::after {
+        right: -57px;
+    }
+
+    .nav-fullwidth-layout .main-navigation ul li:last-child a::after,
+    .nav-fullwidth-layout .main-navigation ul ul li a::after {
+        display: none;
+    }
+
+    .main-navigation .submenu-toggle {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+.main-navigation .menu li a {
+    display: block;
+}
+
+    .classic-layout .header-t>.container .btn-buy,
+    .nav-fullwidth-layout .main-header .right .btn-buy,
+    .nav-fullwidth-layout .nav-wrap,
+    .header-5 .header-t .inquiry-btn {
+        display: none;
+    }
+
+    .nav-fullwidth-layout .main-navigation ul li {
+        margin-right: 0;
+    }
+}
+
+
+
+.nav-fullwidth-layout .nav-wrap {
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body:not(.hasbanner) .nav-fullwidth-layout .nav-wrap {
+    border-top-color: rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-fullwidth-layout+.banner img {
+    height: 100vh;
+}
+
+.nav-fullwidth-layout .main-header .nav-wrap .container {
+    justify-content: center;
+}
+
+/* button */
+
+.main-header .btn-buy:hover, 
+.main-header .btn-buy:focus {
+    color: var(--primary-color);
+}
+
+.main-header .right .btn-buy {
+    font-weight: 400;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+@media only screen and (min-width: 1025px){
+.main-navigation ul li a:hover, 
+.main-navigation ul li a:focus, 
+.main-navigation ul li:hover>a, 
+.main-navigation ul li:focus>a {
+    color: var(--primary-color);
+}
+
+.main-navigation ul li a {
+    color: var(--secondary-color);
+}
+
+.main-navigation ul .current-menu-item>a, 
+.main-navigation ul .current-menu-ancestor>a, 
+.main-navigation ul .current_page_item>a, 
+.main-navigation ul .current_page_ancestor>a {
+    color: var(--primary-color);
+}
+
+.main-navigation ul li:after {
+    background: var(--primary-color);
+}
+
+.nav-fullwidth-layout .main-navigation ul li:last-child a::after,
+.nav-fullwidth-layout .main-navigation ul ul li a::after {
+        display: none;
+    }
+
+    .main-navigation ul li {
+        margin-left: 25px;
+    }
+
+    .main-navigation ul ul .menu-item-has-children:before {
+        position: absolute;
+        top: 5px;
+        right: 0;
+        content: "";
+        background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23000" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path></svg>');
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 15px;
+        font-weight: 400;
+    }
+}
+
+.homepage.hasbanner .main-navigation ul .menu-item-has-children:before {
+    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23fff" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"></path></svg>');
+  }
+
+  .main-header .right .btn-buy:hover, 
+  .main-header .right .btn-buy:focus {
+    color: var(--primary-color);
+}
+
+
+/*=============================
+ Secondary Font Family
+ =============================*/
+
+ .site-branding .site-title,
+ .main-navigation ul,
+ #primary .site-main article .entry-header .entry-title,
+ .page-header .page-title,
+ .error-holder .text-holder h2,
+ .error404 .recent-post .section-title,
+ .error404 .recent-post .col .entry-title,
+ #primary .post .entry-footer .social-share strong,
+ .author-section .text-holder .name,
+ .related-post .section-title,
+ .related-post .col .entry-title,
+ .popular-post .section-title,
+ .popular-post .col .entry-title,
+ .comments-area .comments-title,
+ .comments-area .comment-body .fn,
+ .comments-area .comment-reply-title,
+ .banner .banner-text .text-holder .title,
+ .our-services .widget_text .widget-title,
+ .our-services .grid .widget .widget-title,
+ .featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .widget-title,
+ .our-features .widget.widget_text .widget-title,
+ .our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .widget-title,
+ .our-team .widget_text .widget-title,
+ .our-team .widget_rrtc_description_widget .text-holder .name,
+ .our-testimonial .section-header .widget_text .widget-title,
+ .our-testimonial .grid .widget_rrtc_testimonial_widget .text-holder .testimonial-meta .name,
+ .our-stats .widget_text .widget-title,
+ .our-stats .widget_raratheme_companion_stat_counter_widget .hs-counter,
+ .portfolio .widget_text .widget-title,
+ .blog-section .widget_text .widget-title,
+ .blog-section .blog-post .entry-title,
+ .our-skills .text-holder .title,
+ .portfolio-holder .button-group .button,
+ .portfolio-holder .filter-grid .element-item .img-holder .text-holder .text .title,
+ .our-pricing .widget_text .widget-title,
+ .our-pricing .pricing-holder .col h3,
+ .our-pricing .pricing-holder .col .price-holder,
+ .cta .widget .widget-title,
+ .cta .widget .btn-cta,
+ .faq-section .widget_text .widget-title,
+ .faq-section .widget .accordion li .toggle,
+ .contact-section .widget_text .widget-title,
+ .our-clients .widget .widget-title,
+ .contact-grid .right .contact-info h3,
+ .page-template-faq .widget_raratheme_companion_faqs_widget .accordion li .toggle,
+ .team-grid .widget_rrtc_description_widget .text-holder .name,
+ .testimonial-grid .widget_rrtc_testimonial_widget .text-holder .testimonial-meta .name {
+   font-family: var(--secondary-font);
+ }
+ 
+ .homepage.hasbanner .main-navigation ul ul li a:hover,
+ .homepage.hasbanner .main-navigation ul ul li a:focus,
+ .homepage.hasbanner .main-navigation ul ul li:hover>a,
+ .homepage.hasbanner .main-navigation ul ul li:focus>a,
+ .homepage.hasbanner .main-navigation ul ul .current-menu-item>a,
+ .homepage.hasbanner .main-navigation ul ul .current-menu-ancestor>a,
+ .homepage.hasbanner .main-navigation ul ul .current_page_item>a,
+ .homepage.hasbanner .main-navigation ul ul .current_page_ancestor>a {
+   color: var(--primary-color);
+ }
+
+ .site-branding .site-title a {
+    color: var(--secondary-color);
+  }
+
+ /*=============================
+ Banner
+ =============================*/
+ .banner .banner-text .btn-holder .btn-view-service:hover, 
+ .banner .banner-text .btn-holder .btn-view-service:focus {
+    background: var(--primary-color);
+}
+
+.banner .banner-text .btn-holder .btn-free-inquiry:hover, 
+.banner .banner-text .btn-holder .btn-free-inquiry:focus {
+  color: var(--primary-color);
+}
+
+
+.banner .banner-text .btn-holder .btn-view-service {
+    color: var(--primary-color);
+  }
+
+.banner .banner-text .btn-holder .btn-free-inquiry {
+    background: var(--primary-color);
+  }
+
+
+
+  /*header video*/
+
+  .wp-custom-header .wp-custom-header-video-button {
+    background: var(--primary-color);
+
+  }
+
+  .wp-custom-header .wp-custom-header-video-button:hover svg,
+.wp-custom-header .wp-custom-header-video-button:focus svg {
+  fill: var(--primary-color);
+}
+
+/*============================
+OWL CAROUSEL CUSTOM STYLE
+============================*/
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-color);
+}
+
+/*================================
+ Services Section Style
+ ================================*/
+
+ .our-services .grid .widget .icon-holder svg {
+    color: var(--primary-color);
+  }
+
+  .our-services .grid .widget .btn-readmore {
+    border: 1px solid var(--primary-color);
+  }
+
+  .our-services .grid .widget .btn-readmore:hover,
+.our-services .grid .widget .btn-readmore:focus {
+  background: var(--primary-color);
+}
+
+.our-services .grid .widget .widget-title {
+    color: var(--secondary-color);
+  }
+  
+  .our-services .grid .widget_text .widget-title {
+    color: var(--secondary-color);
+  }
+
+.our-services .grid .widget .btn-readmore:hover, 
+.our-services .grid .widget .btn-readmore:focus,
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore:hover, 
+.featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore:focus,
+.widget_rrtc_description_widget .rtc-team-holder {
+  background: var(--primary-color);
+}
+
+.our-services .grid .widget .btn-readmore,
+  .featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .featured_page_content .btn-readmore {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+  }
+
+  .our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .icon-holder svg {
+    color: var(--primary-color);
+  }
+
+  .featured-page .widget_raratheme_featured_page_widget .widget-featured-holder .text-holder .widget-title,
+  .our-features .widget.widget_text .widget-title,
+  .our-features .widget_rrtc_icon_text_widget .rtc-itw-inner-holder .text-holder .widget-title {
+    color: var(--secondary-color);
+
+  }
+
+  /*================================
+ Team section widget
+ ================================*/
+
+ .our-team .widget.widget_text .widget-title {
+    color: var(--secondary-color);
+  }
+
+ .widget_rrtc_description_widget .rtc-team-holder {
+    background: var(--primary-color);
+  }
+
+  /*=================================
+ Testimonial section style
+ ================================*/
+
+ .our-testimonial .widget.widget_text .widget-title,
+ .widget_rrtc_testimonial_widget .text-holder .testimonial-meta .name {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+  }
+
+ /*================================
+ Stats Section Style
+ ================================*/
+
+ .our-stats .widget.widget_text .widget-title {
+    color: var(--secondary-color);
+  }
+
+ .widget_raratheme_companion_stat_counter_widget .raratheme-sc-holder .icon-holder,
+.widget_raratheme_companion_stat_counter_widget .raratheme-sc-holder .image-holder {
+  color: var(--primary-color);
+}
+
+.widget_raratheme_companion_stat_counter_widget .hs-counter {
+    color: var(--primary-color);
+  }
+
+  /*===================================
+ portfolio section style
+ ==================================*/
+
+ .portfolio .widget.widget_text .widget-title {
+    color: var(--secondary-color);
+  }
+
+ .portfolio-holder .button-group .button:hover,
+.portfolio-holder .button-group .button:focus {
+  color: var(--primary-color);
+}
+
+.portfolio-holder .button-group .button:after {
+    background: var(--primary-color);
+  }
+  
+  .portfolio-holder .button-group .button.is-checked {
+    color: var(--primary-color);
+  }
+
+  .portfolio-holder .filter-grid .element-item .img-holder .text-holder {
+    background: rgba(var(--primary-color-rgb),0.9);
+  }
+
+  /*================================
+ Pricing Section Style
+ ================================*/
+
+ .our-pricing .section-header .widget_text .widget-title,
+ .our-pricing .pricing-holder .col h3,
+ .our-pricing .pricing-holder .col .price-holder {
+    color: var(--secondary-color);
+  }
+
+ .our-pricing .pricing-holder .col .btn-signup {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .our-pricing .pricing-holder .col.popular-plan .btn-signup {
+    color: var(--primary-color);
+  }
+  
+  .our-pricing .pricing-holder .col .btn-signup:hover,
+  .our-pricing .pricing-holder .col .btn-signup:focus {
+    background: var(--primary-color);
+  }
+  
+  .our-pricing .pricing-holder .col.popular-plan {
+    background: var(--primary-color);
+  }
+
+  .our-pricing .pricing-holder .col.premium-plan h3,
+.our-pricing .pricing-holder .col.premium-plan .price-holder {
+  color: var(--primary-color);
+}
+
+/*================================
+ Blog section style
+ ================================*/
+
+ .blog-section .section-header .widget_text .widget-title {
+    color: var(--secondary-color);
+  }
+
+  .blog-section .blog-post .entry-title a {
+    color: var(--secondary-color);
+  }
+
+  .blog-section .blog-post .entry-title a:hover,
+.blog-section .blog-post .entry-title a:focus {
+  color: var(--primary-color);
+}
+
+.blog-section .blog-post .entry-meta a:hover,
+.blog-section .blog-post .entry-meta a:focus {
+  color: var(--primary-color);
+}
+
+/*================================
+ CTA Sectin Style
+ ================================*/
+
+ /*================================
+ FAQ section style
+ ================================*/
+
+ .faq-section .widget.widget_text .widget-title {
+    color: var(--secondary-color);
+  }
+
+ .faq-section .btn-holder .btn-view {
+    border: 1px solid var(--primary-color);
+  }
+
+  .faq-section .btn-holder .btn-view:hover,
+.faq-section .btn-holder .btn-view:focus {
+  background: var(--primary-color);
+}
+
+/*================================
+ Contact Section Style
+ ================================*/
+
+ .contact-section .section-header .widget_text .widget-title,
+ .contact-section .holder .left .contact-detail,
+ .contact-section .holder .left .contact-detail a,
+ .our-clients .widget .widget-title,
+ #primary .site-main article .entry-header .entry-title a  {
+    color: var(--secondary-color);
+  }
+
+ .contact-section .holder .left .contact-detail a:hover,
+.contact-section .holder .left .contact-detail a:focus {
+  color: var(--primary-color);
+}
+
+/*================================
+ Our-clients
+ ================================*/
+
+ /*================================
+ Blog page style
+ ================================*/
+
+ #primary .post .entry-header .entry-meta a:hover,
+ #primary .post .entry-header .entry-meta a:focus {
+   color: var(--primary-color);
+ }
+
+ #primary .site-main article .entry-header .entry-title a:hover,
+#primary .site-main article .entry-header .entry-title a:focus {
+  color: var(--primary-color);
+}
+
+#primary .site-main article .entry-footer .btn-readmore {
+    border: 1px solid var(--primary-color);
+  }
+  
+  #primary .site-main article .entry-footer .btn-readmore:hover,
+  #primary .site-main article .entry-footer .btn-readmore:focus {
+    background: var(--primary-color);
+  }
+
+  /*============================
+ Pagination Style
+ ============================*/
+
+ .pagination a:hover,
+.pagination a:focus,
+.pagination .current {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.post-navigation .nav-links div a:hover {
+    color: var(--primary-color);
+  }
+  
+  .post-navigation .nav-links div a:hover svg {
+    border-color: var(--primary-color);
+  }
+
+
+  /*==============================
+ Breadcrumbs style
+ ==============================*/
+
+ #crumbs a:hover,
+#crumbs a:focus {
+  color: var(--primary-color);
+}
+
+/*============================
+ Page Header Style
+ ============================*/
+
+ .page-header .page-title {
+    color: var(--secondary-color);
+  }
+
+  /*==============================
+ Error Page Style
+ ==============================*/
+
+ .error-holder .text-holder h2,
+ .error404 .recent-post .section-title,
+ .error404 .recent-post .col .entry-title a {
+    color: var(--secondary-color);
+  }
+
+  .error-holder .text-holder .btn-home {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .error-holder .text-holder .btn-home:hover,
+  .error-holder .text-holder .btn-home:focus {
+    background: var(--primary-color);
+  }
+  
+  .error404 .recent-post .col .entry-title a:hover,
+  .error404 .recent-post .col .entry-title a:focus {
+    color: var(--primary-color);
+  }
+
+
+/*==============================
+ Single Post Style
+ =============================*/
+
+ .single #primary .post .entry-header .entry-title,
+ #primary .post .entry-footer .social-share strong {
+    color: var(--secondary-color);
+  }
+
+  #primary .post .entry-content h1,
+#primary .page .entry-content h1,
+#primary .post .entry-content h2,
+#primary .page .entry-content h2,
+#primary .post .entry-content h3,
+#primary .page .entry-content h3,
+#primary .post .entry-content h4,
+#primary .page .entry-content h4,
+#primary .post .entry-content h5,
+#primary .page .entry-content h5,
+#primary .post .entry-content h6,
+#primary .page .entry-content h6 {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+}
+
+  #primary .post .entry-footer .tag a:hover,
+#primary .post .entry-footer .tag a:focus {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/*==============================
+ Author Section style
+ ==============================*/
+
+ .author-section .text-holder .name {
+    color: var(--secondary-color);
+  }
+
+  .author-section .text-holder .social-networks li a {
+    background: var(--primary-color);
+  }
+
+
+  /*==============================
+ Related Post / Popular Posts
+ =============================*/
+
+ .related-post .section-title,
+.popular-post .section-title,
+.related-post .col .entry-title a,
+.popular-post .col .entry-title a {
+  color: var(--secondary-color);
+}
+
+.related-post .col .entry-title a:hover,
+.related-post .col .entry-title a:focus,
+.popular-post .col .entry-title a:hover,
+.popular-post .col .entry-title a:focus {
+  color: var(--primary-color);
+}
+
+/*===============================
+ Comment section style
+ ===============================*/
+
+ .comments-area .comments-title,
+ .comments-area .comment-body .fn,
+ .comments-area .comment-body .fn a {
+    color: var(--secondary-color);
+  }
+
+  .comments-area .comment-body .comment-metadata a:hover,
+.comments-area .comment-body .comment-metadata a:focus {
+  color: var(--primary-color);
+}
+
+.comments-area .comment-body .reply a:hover,
+.comments-area .comment-body .reply a:focus {
+  color: var(--primary-color);
+}
+
+/*===============================
+ Comment form style
+ ===============================*/
+
+ .comments-area .comment-reply-title {
+    color: var(--secondary-color);
+  }
+
+  /*==============================
+ Contact Page Style
+ ==============================*/
+
+ .contact-grid .right .contact-info h3 {
+    color: var(--secondary-color);
+  }
+
+  .contact-grid .right .contact-info .phone,
+.contact-grid .right .contact-info .address,
+.contact-grid .right .contact-info .email,
+.contact-grid .right .contact-info .phone a,
+.contact-grid .right .contact-info .address a,
+.contact-grid .right .contact-info .email a {
+  color: var(--secondary-color);
+}
+
+.contact-grid .right .contact-info .social-networks li a {
+    background: var(--primary-color);
+  }
+
+  /*==============================
+ Team Page Style
+ ==============================*/
+
+ .team-grid .widget_rrtc_description_widget .rtc-team-holder {
+    background: var(--primary-color);
+  }
+
+  /*================================
+ Footer Style
+ ================================*/
+
+ .widget ul li a:hover {
+    color: var(--primary-color);
+  }
+
+  /*=======================
+WIDGET SEARCH
+=======================*/
+
+.widget_product_search .search-form label[for="submit-field"]:hover {
+    color: var(--primary-color);
+  }
+  
+  /*===============================
+COMMON CSS FOR DEFAULT WIDGET
+===============================*/
+
+  .widget ul li span.post-date {
+    color: var(--primary-color);
+  }
+
+  /*======================
+WIDGET TAG CLOUD
+======================*/
+
+.widget_tag_cloud a:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  /*=====================
+WIDGET RSS
+=====================*/
+
+.widget_rss ul li a {
+    color: var(--primary-color);
+  }
+
+  /*=============================
+WIDGET CALENDAR 
+=============================*/
+
+.widget_calendar table caption {
+    background: var(--primary-color);
+  }
+  
+  .widget_calendar table tr th {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .widget_calendar table tr td {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .widget_calendar .wp-calendar-nav {
+    border: 1px solid var(--primary-color);
+  }
+
+  .widget_calendar .wp-calendar-nav span.wp-calendar-nav-prev {
+    border-right: 1px solid var(--primary-color);
+  }
+  
+  .widget_calendar .wp-calendar-nav span.wp-calendar-nav-next {
+    border-left: 1px solid var(--primary-color);
+  }
+
+  .widget_calendar table tr td#today {
+    background: var(--primary-color);
+  }
+
+  /*===========================
+WIDGET CALL TO ACTION
+===========================*/
+
+#secondary .widget_raratheme_companion_cta_widget .btn-cta:hover,
+.top-footer .widget_raratheme_companion_cta_widget .btn-cta:hover {
+  background: var(--primary-color);
+}
+
+/*========================
+WIDGET FAQ
+========================*/
+
+.widget_raratheme_companion_faqs_widget a.expand-faq:hover {
+    color: var(--primary-color);
+  }
+
+  /*=========================
+WIDGET FEATURED PAGE
+=========================*/
+
+.btn-readmore {
+    border: 1px solid var(--primary-color);
+  }
+  
+  .btn-readmore:hover {
+    background: var(--primary-color);
+  }
+
+  /*====================
+WIDGET ICON TEXT
+====================*/
+
+#secondary .widget_rrtc_icon_text_widget .icon-holder svg {
+    color: var(--primary-color);
+  }
+
+  /*==================================
+RARATHEME POST SLIDER WIDGET
+==================================*/
+
+.widget_rara_posts_category_slider_widget .cat-links a:hover,
+.widget_rara_posts_category_slider_widget .title a:hover {
+  color: var(--primary-color);
+}
+
+.widget_rara_posts_category_slider_widget .owl-theme .owl-dots .owl-dot.active span,
+.widget_rara_posts_category_slider_widget .owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-color);
+}
+
+/*===============================
+RARATHEME SOCIAL ICON WIDGET
+===============================*/
+
+.widget_rtc_social_links .rtc-social-icon-wrap a:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+
+  #primary-toggle-button span {
+    background: var(--primary-color);
+  }
+
+  
+
+  @media (max-width: 1024px) {
+  .responsive-menu-holder .mobile-navigation .close-main-nav-toggle {
+    color: rgba(var(--primary-color-rgb),0.9);
+    border: 1px solid var(--primary-color);
+  }
+
+  .responsive-menu-holder {
+    background: var(--primary-color);
+  }
+
+  .site-header .header-t.bg-color {
+    background: var(--primary-color);
+  }
+
+  .responsive-menu-holder .btn-buy:hover,
+  .responsive-menu-holder .btn-buy:focus {
+    color: var(--primary-color) !important;
+  }
+}
+
+/* Sidebar */
+
+.site-footer .widget_raratheme_featured_page_widget .text-holder .featured_page_content .btn-readmore {
+    background: var(--primary-color);
+  }
+  
+  .site-footer .widget_raratheme_featured_page_widget .text-holder .featured_page_content .btn-readmore:hover {
+    color: var(--primary-color);
+  }
+
+  /* Site footer */
+
+  .site-footer {
+    background: #10194c;
+}
+
+  .site-footer .widget_raratheme_companion_cta_widget .raratheme-cta-container .button-wrap .btn-cta:hover {
+    color: var(--primary-color);
+  }
+
+  .footer-t .widget .textwidget a{
+    color: #fff;
+  }
+  .footer-t .widget .textwidget a:hover{
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+
+  /* Custom Categories Slider */
+
+  .site-footer .widget_raratheme_custom_categories .raratheme-custom-categories-wrap .raratheme-custom-categories-meta-wrap li a {
+    background-color: var(--primary-color);
+  }
+
+  .site-footer .widget_raratheme_author_bio .text-holder .readmore:hover {
+    color: var(--primary-color);
+  }
+
+
+
+  /* Sidebar fixes */
+#secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore,
+.site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore:hover {
+  background: var(--primary-color);
+}
+
+#secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .author-bio-socicons .author-socicons li a,
+.site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .author-bio-socicons .author-socicons li a {
+  background-color: var(--primary-color);
+}
+
+/* Contact Widget */
+.site-footer .widget.widget_rtc_contact_social_links .rtc-contact-widget-wrap .social-networks li a,
+#secondary .widget.widget_rtc_contact_social_links .rtc-contact-widget-wrap .social-networks li a {
+  background-color: var(--primary-color);
+}
+
+/* Custom Categories */
+#secondary .widget_raratheme_custom_categories .raratheme-custom-categories-wrap .raratheme-custom-categories-meta-wrap li a {
+  background-color: var(--primary-color);
+}
+
+/* Faq fixes */
+
+#secondary .widget_raratheme_featured_widget .text-holder .readmore:hover,
+.site-footer .widget_raratheme_featured_widget .text-holder .readmore:hover {
+  background: var(--primary-color);
+}
+
+#secondary .widget.widget_raratheme_companion_faqs_widget .raratheme-faq-holder .expand-faq:hover {
+  color: #006ba1;
+}
+
+/* Icon text */
+#secondary .widget.widget_raratheme_image_text_widget .raratheme-itw-holder li a.btn-readmore,
+.site-footer .widget.widget_raratheme_image_text_widget .raratheme-itw-holder li a.btn-readmore {
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+}
+
+#secondary .widget.widget_raratheme_image_text_widget .raratheme-itw-holder li a.btn-readmore:hover,
+.site-footer .widget.widget_raratheme_image_text_widget .raratheme-itw-holder li a.btn-readmore:hover {
+  color: var(--primary-color);
+}
+
+/* Image Widget */
+#secondary .widget_raratheme_image_widget .readmore {
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+  }
+  
+  #secondary .widget_raratheme_image_widget .readmore:focus,
+  #secondary .widget_raratheme_image_widget .readmore:hover {
+    color: var(--primary-color);
+  }
+
+  /* cta sitefooter */
+.site-footer .widget_raratheme_companion_cta_widget .raratheme-cta-container .button-wrap .btn-cta {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+
+  /* Author bio */
+.site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore,
+.site-footer .widget_raratheme_featured_widget .text-holder .readmore,
+.site-footer .widget_rrtc_icon_text_widget .btn-readmore {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.site-footer .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore:hover,
+.site-footer .widget_raratheme_featured_widget .text-holder .readmore:hover,
+.site-footer .widget_rrtc_icon_text_widget .btn-readmore:hover {
+  color: var(--primary-color);
+}
+
+.site-footer .widget_raratheme_image_widget .readmore {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.site-footer .widget_raratheme_image_widget .readmore:hover {
+  color: var(--primary-color);
+}
+
+#secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore,
+#secondary .widget_raratheme_featured_widget .text-holder .readmore,
+#secondary .widget.widget_rrtc_icon_text_widget .btn-readmore {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#secondary .widget.widget_raratheme_author_bio .raratheme-author-bio-holder .text-holder .readmore:hover,
+#secondary .widget_raratheme_featured_widget .text-holder .readmore:hover,
+#secondary .widget.widget_rrtc_icon_text_widget .btn-readmore:hover {
+  color: var(--primary-color);
+}
+
+#secondary .widget_rtc_social_links .rtc-social-icon-wrap a {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Single Post */
+
+.entry-content a:hover,
+.entry-summary a:hover,
+.page-content a:hover,
+.comment-content a:hover,
+.widget .textwidget a:hover {
+  color: var(--primary-color);
+}

@@ -1,0 +1,121 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "templateParts": [
+    {
+      "name": "header-with-banner",
+      "title": "Header With Banner",
+      "area": "header"
+    },
+    {
+      "name": "archive-header-layout",
+      "title": "Archive Header",
+      "area": "header"
+    }
+  ],
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": true,
+      "customGradient": true,
+      "customDuotone": true,
+      "link": true,
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#EA173D",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#FFA500",
+          "name": "Secondary"
+        },
+        {
+          "slug": "tertiary",
+          "color": "#EC4564",
+          "name": "Tertiary"
+        },
+        {
+          "slug": "tertiary-light",
+          "color": "#EE96A6",
+          "name": "Tertiary Light"
+        },
+        {
+          "slug": "accent",
+          "color": "#F76C85",
+          "name": "Accent"
+        },
+        {
+          "slug": "accent-lite",
+          "color": "#F9C3CD",
+          "name": "Accent Lite"
+        },
+        {
+          "slug": "background-alt",
+          "color": "#F3F6FA",
+          "name": "Background Alternative"
+        },
+        {
+          "slug": "foreground",
+          "color": "#8B8A8A",
+          "name": "Foreground"
+        },
+        {
+          "slug": "background",
+          "color": "#ffffff",
+          "name": "Background"
+        },
+        {
+          "name": "Heading Color",
+          "color": "#0D0C0F",
+          "slug": "heading-color"
+        },
+        {
+          "name": "Sub Heading Color",
+          "color": "#515151",
+          "slug": "sub-heading-color"
+        },
+        {
+          "name": "Foreground Alternative",
+          "color": "#FEFEFE",
+          "slug": "foregound-alt"
+        },
+        {
+          "name": "Border Color",
+          "color": "#F8E7EA",
+          "slug": "border-color"
+        },
+        {
+          "color": "#ffffff00",
+          "name": "Transparent",
+          "slug": "transparent"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+      "fontSize": "var(--wp-preset--font-size--small)"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--plus-jakarta-sans)",
+          "fontStyle": "normal",
+          "fontWeight": "var(--wp--preset--font-weight--regular)",
+          "lineHeight": "var(--wp--preset--line-height--xxSmall)"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--heading-color)",
+          "background": "var(--wp--preset--color--transparent)"
+        }
+      }
+    },
+    "color": {
+      "background": "var(--wp--preset--color--background)",
+      "text": "var(--wp--preset--color--foreground)"
+    }
+  }
+}

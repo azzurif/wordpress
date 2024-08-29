@@ -1,0 +1,92 @@
+# <!=Copyright (C) 2023 Rara Theme
+# This file is distributed under the GNU General Public License v3 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Growth Business 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/growth-business\n"
+"POT-Creation-Date: 2023-03-16 07:43:49+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: grunt-wp-i18n 1.0.3\n"
+
+#: functions.php:147
+msgid "Mobile"
+msgstr ""
+
+#: functions.php:249
+msgid "Growth Business | Developed By "
+msgstr ""
+
+#: functions.php:250
+msgid "Rara Themes"
+msgstr ""
+
+#: functions.php:254
+#. translators: 1: poweredby, 2: link, 3: span tag closed
+msgid " %1$sPowered by %2$s%3$s"
+msgstr ""
+
+#: functions.php:254
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Growth Business"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://rarathemes.com/wordpress-themes/growth-business/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Growth Business is a free WordPress theme for businesses and corporate "
+"websites. It is also ideal for websites such as digital agency, coaching, "
+"accountant, advisor, creatives, portfolio, restaurants, cafes, health, "
+"beauty, marketing, education, hotel, construction, events, fitness, "
+"fashion, lawyer, consulting, spa, charity, etc. It is responsive, "
+"Schema.org compatible, SEO friendly, RTL compatible, speed optimized, and "
+"translation ready. Check the demo at "
+"https://rarathemes.com/previews/?theme=growth-business, read the "
+"documentation at https://docs.rarathemes.com/docs/rara-business/, and get "
+"support at https://rarathemes.com/support-ticket/."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Rara Theme"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://rarathemes.com/"
+msgstr ""
+
+#: functions.php:44
+#. Translators: If there are characters in your language that are not supported
+#. by DM Sans fonts, translate this to 'off'. Do not translate into your own
+#. language.
+msgctxt "DM Sans: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:51
+#. Translators: If there are characters in your language that are not supported
+#. by Red Hat Display fonts, translate this to 'off'. Do not translate into
+#. your own language.
+msgctxt "Red Hat Display: on or off"
+msgid "on"
+msgstr ""
